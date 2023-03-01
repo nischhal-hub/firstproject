@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    border: 2px solid red;
+    display: flex;
+    width: clamp(200px,70%,450px);
+    height: 320px;
+
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin:0 auto;
+    box-shadow: 0 10px 15px 0 hsl(221, 100%, 96%);
+}
+.visual{
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    color: white;
+}
+.top{
+    color:  hsl(224, 30%, 27%);
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    font-weight: 800;
+}
+.circle{
+    background-image:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%; 
+    padding-top: 20px;
+}
+.circle h1{
+    font-size: 3.5rem;
+}
+.circle p{
+    color: hsl(224, 30%, 27%);
+    font-size: 1.2rem;
+}
+
+.visual-footer{
+    position: absolute;
+    top: 200px;
+    
+}
+.visual-footer h2{
+    font-size: 1.8rem;
+}
+.visual-footer p{
+    width: 70%;
+    font-size: 1.1rem;
+    margin: 1.5rem auto;
+    color: hsl(221, 100%, 96%);
+}
+.content{
+    width: 50%;
+    padding-left: 20px;
+}
+.content-heading{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 18px;
+}
+.score1{
+    display: flex;
+    font-size: 1.2rem;
+    background-color: hsla(39, 100%, 56%, 0.093);
+    margin: 10px 10px 15px 0;
+    padding: 5px 15px;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: hsl(39, 100%, 56%);
+    
+}
+.score1 p{
+    padding: 2.5px;
+}.score2 p{
+    padding: 2.5px;
+}.score3 p{
+    padding: 2.5px;
+}.score4 p{
+    padding: 2.5px;
+}
+.marks p{
+    color: hsl(224, 30%, 27%);
+}
+.marks span{
+    color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+.score2{
+    display: flex;
+    font-size: 1.2rem;
+    background-color: hsla(0, 100%, 67%, 0.093);
+    margin: 10px 10px 15px 0;
+    padding: 5px 15px;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: hsla(0, 100%, 67%);
+}
+.score3{
+    display: flex;
+    font-size: 1.2rem;
+    background-color: hsla(166, 100%, 37%, 0.093);
+    margin: 10px 10px 15px 0;
+    padding: 5px 15px;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: hsla(166, 100%, 37%);
+}
+.score4{
+    display: flex;
+    font-size: 1.2rem;
+    background-color: hsla(234, 85%, 45%, 0.093);
+    margin: 10px 10px 15px 0;
+    padding: 5px 15px;
+    justify-content: space-between;
+    border-radius: 10px;
+    color:hsla(234, 85%, 45%);
+}
+
+.topic1{
+    display: flex;   
+}.topic2{
+    display: flex;
+}.topic3{
+    display: flex;
+}.topic4{
+    display: flex;
+}
+.button{
+    text-align: center;
+    width: 95%;
+    margin-top:20px ;
+    cursor: pointer;
+}
+.button p{
+    border-radius: 15px;
+    background-color: hsl(224, 30%, 27%);
+    padding: 8px 15px;
+    color: white;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 375px) {
+    html{
+        font-size: 80%;
+    }
+    .main{
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        border: 0;
+    }
+    .visual{
+        background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        border-radius: 15px;
+        text-align: center;
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 0;
+        height: 330px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .content{
+        width: 100%;
+        margin-top: 340px;
+    }
+    svg{
+        margin-right: 8px;
+        margin-top: 2px;
+    }
+    .button p{
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
