@@ -16,11 +16,9 @@ body{
     align-items: center;
 }
 .main{
-    border: 2px solid red;
     display: flex;
     width: clamp(200px,70%,450px);
     height: 320px;
-
     background-color: hsl(0, 0%, 100%);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
